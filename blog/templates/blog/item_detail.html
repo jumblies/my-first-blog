@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+	<a href="{% url 'index' %}"></a>
+	<p><a>Item:</a> {{ item.title|capfirst }}</p>
+	
+	<p><a>Stock: </a>{{ item.amount }}</p>
+	<p><a>Description: </a> {{ item.description}}</p>
+	<p><a>Material: </a>{{ item.material|capfirst}}</a>
+	
+{% endblock %}
