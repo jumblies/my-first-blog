@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+h1 a {
+    color: #FCA205;
+    font-family: 'Indie Flower', cursive;
+    font-weight: 800;
+}
+body {
+    padding-left: 15px;
+}
