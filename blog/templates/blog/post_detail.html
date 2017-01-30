@@ -13,4 +13,9 @@
 		<h1>{{ post.title }}</a></h1>
 		<p>{{ post.text|linebreaksbr }}</p>
 		</div>
+		<hr>
+		<p>Post Author: {{ post.author }}</p> 
+		{# I added this to test. For loop didn't work #}
+		{# Comments go in curly brackets with an octothorpe #}
+
 	{% endblock %}

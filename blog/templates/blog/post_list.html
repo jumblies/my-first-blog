@@ -5,9 +5,12 @@
         <div class="post">
             <div class="date">
                 {{ post.published_date }}
+				{{ post.author }}
             </div>
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">
+			{{ post.title }}</a></h1>
+			<h3>Authored by: {{ post.author }}</h3>
+            <p>{{ post.text|linebreaksbr|slice:"0:20" }}...</p>
         </div>
     {% endfor %}
 {% endblock content %}
